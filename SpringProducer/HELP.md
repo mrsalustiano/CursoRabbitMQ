@@ -17,5 +17,4 @@ The following guides illustrate how to use some features concretely:
 
 * Comando para baixar a imagem do Docker do RabbitMQ
   
-  docker run -d --hostname my-rabbit --name some-rabbit -p 15672:15672 rabbitmq:3-management
-
+  docker run -d --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
