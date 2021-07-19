@@ -18,3 +18,24 @@ The following guides illustrate how to use some features concretely:
 * Comando para baixar a imagem do Docker do RabbitMQ
   
   docker run -d --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+* Comando para Iniciar o Container do RabbitMQ  
+   docker start rabbit
+~~~~ 
+   * Console do Docker para ativar a fila
+  
+   docker exec -it some-rabbitmq bash
+~~~~
+  
+~~~~ 
+
+ * Dentro do BASH do Docker rodar o comando abaixo para ativar a movimentacao da fila de DL para RK
+   
+  rabbitmq-plugins enable rabbitmq_shovel rabbitmq_shovel_management ~~~~
+
+
+
+
+
+
+
